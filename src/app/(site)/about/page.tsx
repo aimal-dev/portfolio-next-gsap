@@ -81,7 +81,7 @@ export default function AboutPage() {
                                 <p key={i} className="fade-in">
                                     <span className={styles.lineNum}>{i + 1}</span> 
                                     <span className="text-secondary">{line}</span>
-                                </p>
+                    </p>
                             ))}
                         </>
                     )}
@@ -185,7 +185,7 @@ export default function AboutPage() {
                 </div>
             </div>
             
-            <div className={styles.previewColumn}>
+             <div className={styles.previewColumn}>
                 <h3 className={`${styles.previewTitle} fade-in`}>
                     {activeSection === 'bio' || activeSection === 'skills' ? '// Profile Preview:' : '// Code Snippet:'}
                 </h3>
@@ -196,19 +196,19 @@ export default function AboutPage() {
                                 <div style={{width: '100%', display: 'flex', flexDirection: 'column', alignItems: 'center', padding: '20px 0'}}>
                                     <div style={{width: '200px', height: '200px', position: 'relative', marginBottom: '1rem'}}>
                                          <Image src={aboutData.image} alt="Profile" fill style={{borderRadius: '50%', border: '2px solid #43d9ad', objectFit: 'cover'}} />
-                                    </div>
+                        </div>
                                     {activeSection === 'skills' && <p className="text-secondary" style={{fontSize: '0.9rem'}}>{`// Visualizing skills...`}</p>}
-                                </div>
+                    </div>
                         ) : (
-                            <div className={styles.codeSnippet}>
-                                    <code>
+                    <div className={styles.codeSnippet}>
+                        <code>
                                         <span className="text-secondary">{`// No image uploaded yet`}</span><br/>
                                         <span className="purple">const</span> <span className="blue">profile</span> = {'{'}<br/>
                                         &nbsp;&nbsp;<span className="blue">name</span>: <span className="orange">&quot;Alex Dev&quot;</span>,<br/>
                                         &nbsp;&nbsp;<span className="blue">skills</span>: [<span className="orange">...loading</span>]<br/>
-                                        {'}'}
-                                    </code>
-                            </div>
+                            {'}'}
+                        </code>
+                    </div>
                         )
                    ) : (
                         <div className={styles.codeSnippet} style={{maxHeight: '400px', overflow: 'auto', fontSize: '0.8rem'}}>
