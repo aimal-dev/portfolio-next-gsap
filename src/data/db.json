@@ -1,0 +1,87 @@
+{
+  "hero": {
+    "greeting": "Hi all. I am",
+    "name": "Alex Dev",
+    "role": "> Frontend Engineer",
+    "githubLink": "https://github.com/example"
+  },
+  "contact": {
+    "email": "user@gmail.com",
+    "phone": "+3598246359"
+  },
+  "projects": [
+    {
+      "id": 1,
+      "title": "Neon Dashboard",
+      "description": "A futuristic dashboard with real-time data visualization.",
+      "tech": [
+        "React",
+        "D3.js",
+        "Socket.io"
+      ],
+      "image": "/images/project1.jpg",
+      "link": "#"
+    },
+    {
+      "id": 2,
+      "title": "E-Commerce Ultra",
+      "description": "High-performance headless e-commerce platform.",
+      "tech": [
+        "Next.js",
+        "Shopify API",
+        "GSAP"
+      ],
+      "image": "/images/project2.jpg",
+      "link": "#"
+    },
+    {
+      "id": 3,
+      "title": "AI Chat Interface",
+      "description": "Generative AI chat interface with streaming responses.",
+      "tech": [
+        "TypeScript",
+        "OpenAI",
+        "Tailwind"
+      ],
+      "image": "/images/project3.jpg",
+      "link": "#"
+    },
+    {
+      "id": 4,
+      "title": "Cyberpunk Portfolio",
+      "description": "My personal portfolio exploring webGL interactions.",
+      "tech": [
+        "Three.js",
+        "React Fiber",
+        "GLSL"
+      ],
+      "image": "/images/project4.jpg",
+      "link": "#"
+    }
+  ],
+  "messages": [],
+  "about": {
+    "bio": "Updated Bio Test",
+    "image": "/uploads/about-1768487103365-WhatsApp-Image-2026-01-04-at-1.03.57-AM.jpeg"
+  },
+  "certificates": [
+    {
+      "id": 1768487949909,
+      "name": "React Native Specialist",
+      "issuer": "Udemy",
+      "date": "2024",
+      "link": "https://udemy.com",
+      "image": "/uploads/cert-1768490371261-eco-friendly-paper-bag-gray-concrete_147376-2424.jpg"
+    }
+  ],
+  "education": [
+    {
+      "id": 1768488498329,
+      "school": "Karachi University",
+      "degree": "BSSE",
+      "startDate": "2017",
+      "endDate": "2021",
+      "description": ">bla bla"
+    }
+  ]
+}

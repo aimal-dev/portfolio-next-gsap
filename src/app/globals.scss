@@ -1,0 +1,111 @@
+@import url("https://fonts.googleapis.com/css2?family=Fira+Code:wght@300;400;500;600;700&family=Outfit:wght@300;400;500;600;700&display=swap");
+
+:root {
+  --bg-primary: #011627;
+  --bg-secondary: #011221;
+  --bg-card: #0d1b2a;
+
+  --text-primary: #e6f1ff;
+  --text-secondary: #607b96;
+  --text-accent: #4d5bce;
+
+  --accent-green: #43d9ad;
+  --accent-cyan: #4cc9f0;
+  --accent-pink: #f72585;
+  --accent-purple: #7209b7;
+  --accent-orange: #fe7f2d;
+
+  --border-color: #1e2d3d;
+
+  --font-mono: "Fira Code", monospace;
+  --font-sans: "Outfit", sans-serif;
+
+  --radius-sm: 4px;
+  --radius-md: 8px;
+  --radius-lg: 16px;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+  background-color: var(--bg-primary);
+  color: var(--text-primary);
+  font-family: var(--font-sans);
+  overflow-x: hidden; /* Prevent horizontal scroll */
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+button {
+  cursor: pointer;
+  border: none;
+  background: none;
+  font-family: inherit;
+}
+
+/* Scrollbar */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--bg-primary);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--text-secondary);
+  border-radius: 5px;
+  border: 2px solid var(--bg-primary);
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--text-accent);
+}
+
+/* Utility Classes */
+.container {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 0 2rem;
+}
+
+.mono {
+  font-family: var(--font-mono);
+}
+
+.gradient-text {
+  background: linear-gradient(
+    to right,
+    var(--accent-green),
+    var(--accent-cyan)
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* Grid Layout for Projects */
+.grid-gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 2rem;
+}
+
+/* Syntax Highlighting Utilities */
+.pink { color: var(--accent-pink); }
+.purple { color: var(--accent-purple); }
+.green { color: var(--accent-green); }
+.orange { color: var(--accent-orange); }
+.blue { color: var(--accent-cyan); }
+.yellow { color: #ffd60a; }
+
+.text-secondary { color: var(--text-secondary); }

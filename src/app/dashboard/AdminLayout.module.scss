@@ -1,0 +1,80 @@
+
+ /* Admin Dashboard Layout Styles */
+ .adminContainer {
+     display: flex;
+     min-height: 100vh;
+     background: #f4f5f7; /* Light gray background for CMS look */
+     color: #172b4d;
+     font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+ }
+ 
+ .sidebar {
+     width: 250px;
+     background: #001529; /* Dark sidebar like standard CMS */
+     color: white;
+     padding: 2rem 1rem;
+     flex-shrink: 0;
+ }
+ 
+ .brand {
+     font-size: 1.5rem;
+     font-weight: bold;
+     margin-bottom: 2rem;
+     padding-bottom: 1rem;
+     border-bottom: 1px solid rgba(255,255,255,0.1);
+     display: flex;
+     align-items: center;
+     gap: 0.5rem;
+ }
+ 
+ .menu {
+     display: flex;
+     flex-direction: column;
+     gap: 0.5rem;
+ }
+ 
+ .menuItem {
+     display: flex;
+     align-items: center;
+     gap: 0.8rem;
+     padding: 0.8rem 1rem;
+     border-radius: 4px;
+     color: rgba(255,255,255,0.7);
+     text-decoration: none;
+     transition: all 0.2s;
+     cursor: pointer;
+     
+     &:hover, &.active {
+         background: #1890ff;
+         color: white;
+     }
+
+     svg {
+        height: 18px;
+        width: 18px;
+     }
+ }
+ 
+ .contentArea {
+     flex: 1;
+     padding: 2rem;
+     overflow-y: auto;
+ }
+ 
+ .header {
+     background: white;
+     padding: 1rem 2rem;
+     border-bottom: 1px solid #e8e8e8;
+     display: flex;
+     justify-content: space-between;
+     align-items: center;
+     margin: -2rem -2rem 2rem -2rem;
+     box-shadow: 0 1px 4px rgba(0,0,0,0.05);
+ }
+
+ .logout {
+    color: #ff4d4f;
+    cursor: pointer;
+    font-size: 0.9rem;
+    &:hover { text-decoration: underline; }
+ }
